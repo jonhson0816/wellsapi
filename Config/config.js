@@ -2,13 +2,19 @@
  * Application configuration settings
  * Contains environment-specific settings for various components
  */
-
 // Use environment variables with fallbacks for local development
 const config = {
     // Server configuration
     server: {
       port: process.env.PORT || 3000,
       environment: process.env.NODE_ENV || 'development',
+    },
+    
+    // CORS configuration for frontend
+    cors: {
+      origin: process.env.FRONTEND_URL || 'https://wells-vxzc.vercel.app',
+      credentials: true,
+      optionsSuccessStatus: 200
     },
     
     // Database configuration
