@@ -31,9 +31,10 @@ if (process.env.NODE_ENV === 'development') {
 
 // 3. CORS Configuration - CRITICAL FOR YOUR ISSUE
 const allowedOrigins = [
-  'https://wellsfargoca.net',
-  'https://www.wellsfargoca.net',
+  // 'https://wellsfargoca.net',
+  // 'https://www.wellsfargoca.net',
   'https://wells-fargo-seven.vercel.app',
+  'https://wells-five.vercel.app',
   'http://localhost:3000',
   'http://localhost:5173',
   'http://127.0.0.1:3000',
